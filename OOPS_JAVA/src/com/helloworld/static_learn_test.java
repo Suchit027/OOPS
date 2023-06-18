@@ -9,5 +9,6 @@ public class static_learn_test {
 		static_learn.change();
 		student1.display();
 		student2.display();
+		System.out.println("Cube ans = " + static_learn.cube(5));
 	}
 }

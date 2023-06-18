@@ -18,4 +18,13 @@ public class static_learn {
 	public void display() {
 		System.out.println(roll_no + " " + name + " " + college);
 	}
+
+// it can also be used like this
+	public static int cube(int num) {
+		return num * num * num;
+	}
+//static as a block
+	static {
+		System.out.println("Showing static as a block");
+	}
 }
