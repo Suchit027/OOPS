@@ -12,6 +12,7 @@ public class Factorial {
 			return 1;
 		}
 	}
+
 	public static void main(String[] args) {
 		Factorial ob = new Factorial();
 		System.out.println(ob.fact(4));

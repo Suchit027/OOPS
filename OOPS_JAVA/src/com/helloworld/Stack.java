@@ -1,4 +1,5 @@
 package com.helloworld;
+
 import java.util.Scanner;
 
 class Stack {
@@ -28,6 +29,7 @@ class Stack {
 			return 0;
 		}
 	}
+
 	public static void main(String[] args) {
 		try (Scanner myinput = new Scanner(System.in)) {
 			int size = myinput.nextInt();

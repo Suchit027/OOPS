@@ -23,10 +23,12 @@ public class static_learn {
 	public static int cube(int num) {
 		return num * num * num;
 	}
+
 //static as a block
 	static {
 		System.out.println("Showing static as a block");
 	}
+
 	public static void main(String[] args) {
 		static_learn student1 = new static_learn(1, "Karan");
 		static_learn student2 = new static_learn(2, "Aryan");

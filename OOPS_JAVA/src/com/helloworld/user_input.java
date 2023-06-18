@@ -3,8 +3,7 @@ package com.helloworld;
 public class user_input {
 	// menu selection program
 	class Menu {
-		public static void main(String[] args) 
-				throws java.io.IOException {
+		public static void main(String[] args) throws java.io.IOException {
 			char choice;
 			do {
 				System.out.println("Help on:");
