@@ -6,23 +6,32 @@ class box {
 	double height;
 	double length;
 
-	box(double w, double h, double l) { // making the constructor
-		width = w; // could have also used this.width; 'this' is used to refer to the object which
-					// invoked the method
+	// making the constructor could have also used this.width; 'this' is used to
+	// refer to the object which invoked the method
+	box(double w, double h, double l) {
+		width = w;
 		height = h;
 		length = l;
 	}
 
-	box() { // default constructor
+	// default constructor
+	box() {
 		width = -1;
 		height = -1;
 		length = -1;
 	}
 
-	box(double side) {// constructor for squares
+	// constructor for squares
+	box(double side) {
 		width = length = height = side;
 	}
-
+	
+	// constructor to create copies
+	box(box ob){
+		width = ob.width;
+		height = ob.height;
+		length = ob.length;
+	}
 	double volume() {
 		double vol;
 		vol = width * height * length;
