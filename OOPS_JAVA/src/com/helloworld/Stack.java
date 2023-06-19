@@ -3,8 +3,8 @@ package com.helloworld;
 import java.util.Scanner;
 
 class Stack {
-	int stk[]; // int stack
-	int pos; // position of stack
+	private int stk[]; // int stack
+	private int pos; // position of stack
 
 	// constructor
 	Stack(int size) {
