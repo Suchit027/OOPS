@@ -2,6 +2,7 @@ package com.helloworld;
 
 public class array_creation {
 	public static void main(String[] args) {
+		// in java we have to initialize each array element except those of int, float, etc.
 		int[] arr = new int[5];
 		arr[0] = 0;
 		arr[1] = 1;

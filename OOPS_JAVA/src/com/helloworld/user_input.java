@@ -12,7 +12,9 @@ public class user_input {
 				System.out.println("3: while");
 				System.out.println("4: do-while");
 				System.out.println("5: for");
-				choice = (char) System.in.read(); // Important ; notice how to take user input in java
+
+				// Important ; notice how to take user input in java
+				choice = (char) System.in.read();
 			} while (choice < '1' || choice > '5');
 			System.out.println("\n");
 			switch (choice) {

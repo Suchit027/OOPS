@@ -4,6 +4,7 @@ public class Boolean_demo {
 	static public void main(String[] args) {
 		boolean b;
 		b = false;
+		// false is printed
 		System.out.println("b is " + b);
 		b = true;
 		System.out.println("b is " + b);

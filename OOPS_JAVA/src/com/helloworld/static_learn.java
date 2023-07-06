@@ -24,9 +24,12 @@ public class static_learn {
 		return num * num * num;
 	}
 
-//static as a block
+//static as a block is always executed first
 	static {
 		System.out.println("Showing static as a block");
+	}
+	static {
+		System.out.println("Executing static block in order");
 	}
 
 	public static void main(String[] args) {
