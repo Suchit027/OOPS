@@ -25,13 +25,14 @@ class box {
 	box(double side) {
 		width = length = height = side;
 	}
-	
+
 	// constructor to create copies
-	box(box ob){
+	box(box ob) {
 		width = ob.width;
 		height = ob.height;
 		length = ob.length;
 	}
+
 	double volume() {
 		double vol;
 		vol = width * height * length;
