@@ -1,4 +1,4 @@
-package com.helloworld;
+package Box;
 
 class box {
 

@@ -1,4 +1,4 @@
-package com.helloworld;
+package Box;
 
 public class Box_weight extends box {
 	double weight;
@@ -10,6 +10,7 @@ public class Box_weight extends box {
 	}
 
 // constructor with all values
+// use Ctrl + spacebar to access super of various constructors of superclass
 	Box_weight(double w, double h, double l, double m) {
 		super(w, h, l);
 		weight = m;

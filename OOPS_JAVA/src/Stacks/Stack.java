@@ -1,4 +1,4 @@
-package com.helloworld;
+package Stacks;
 
 import java.util.Scanner;
 

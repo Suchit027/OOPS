@@ -1,4 +1,4 @@
-package com.helloworld;
+package call_methods;
 
 class test {
 	void meth(int i, int j) {

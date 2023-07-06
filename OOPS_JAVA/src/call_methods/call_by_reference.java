@@ -1,4 +1,4 @@
-package com.helloworld;
+package call_methods;
 
 class test1 {
 	int a, b;
