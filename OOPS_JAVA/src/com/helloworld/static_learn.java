@@ -11,7 +11,7 @@ public class static_learn {
 	}
 
 // only static method can change value of static variable; can be invoked with just the name of the class, no need of an instance
-	static void change() {
+	public static void change() {
 		college = "Manipal institute of Technology";
 	}
 

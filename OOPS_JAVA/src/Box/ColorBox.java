@@ -12,13 +12,13 @@ public class ColorBox extends box {
 	}
 
 	// constructor for copies
-	ColorBox(ColorBox ob) {
+	public ColorBox(ColorBox ob) {
 		super(ob);
 		color = ob.color;
 	}
 
 	// constructor
-	ColorBox(double w, double h, double l, String c) {
+	public ColorBox(double w, double h, double l, String c) {
 		super(w, h, l);
 		color = c;
 	}

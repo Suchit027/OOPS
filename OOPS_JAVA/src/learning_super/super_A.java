@@ -7,7 +7,7 @@ public class super_A {
 		System.out.println("First class A's default constructor is executed");
 	}
 
-	void show() {
+	public void show() {
 		System.out.println("This shows value of i in A " + i);
 	}
 }

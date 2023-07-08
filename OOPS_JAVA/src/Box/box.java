@@ -8,32 +8,32 @@ class box {
 
 	// making the constructor could have also used this.width; 'this' is used to
 	// refer to the object which invoked the method
-	box(double w, double h, double l) {
+	public box(double w, double h, double l) {
 		width = w;
 		height = h;
 		length = l;
 	}
 
 	// default constructor
-	box() {
+	public box() {
 		width = -1;
 		height = -1;
 		length = -1;
 	}
 
 	// constructor for squares
-	box(double side) {
+	public box(double side) {
 		width = length = height = side;
 	}
 
 	// constructor to create copies
-	box(box ob) {
+	public box(box ob) {
 		width = ob.width;
 		height = ob.height;
 		length = ob.length;
 	}
 
-	double volume() {
+	public double volume() {
 		double vol;
 		vol = width * height * length;
 		return vol;

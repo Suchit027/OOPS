@@ -1,7 +1,7 @@
 package call_methods;
 
 class test {
-	void meth(int i, int j) {
+	public void meth(int i, int j) {
 		i *= 2;
 		j /= 2;
 	}

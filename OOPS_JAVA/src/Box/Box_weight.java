@@ -11,19 +11,19 @@ public class Box_weight extends box {
 
 // constructor with all values
 // use Ctrl + spacebar to access super of various constructors of superclass
-	Box_weight(double w, double h, double l, double m) {
+	public Box_weight(double w, double h, double l, double m) {
 		super(w, h, l);
 		weight = m;
 	}
 
 // constructor for cube
-	Box_weight(double side, double m) {
+	public Box_weight(double side, double m) {
 		super(side);
 		weight = m;
 	}
 
 // constructor for copies
-	Box_weight(Box_weight ob) {
+	public Box_weight(Box_weight ob) {
 		super(ob);
 		weight = ob.weight;
 	}
