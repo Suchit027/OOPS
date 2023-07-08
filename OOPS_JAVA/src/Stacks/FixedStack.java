@@ -2,12 +2,12 @@ package Stacks;
 
 import java.util.Scanner;
 
-class Stack {
+class FixedStack implements IntStack{
 	private int stk[]; // int stack
 	private int pos; // position of stack
 
 	// constructor
-	public Stack(int size) {
+	public FixedStack(int size) {
 		stk = new int[size];
 		pos = -1; // initial position of stack has to be -1 to allow pop to work without bugs
 	}
@@ -33,7 +33,7 @@ class Stack {
 	public static void main(String[] args) {
 		try (Scanner myinput = new Scanner(System.in)) {
 			int size = myinput.nextInt();
-			Stack new_stack = new Stack(size); // declaring new stack
+			FixedStack new_stack = new FixedStack(size); // declaring new stack
 			for (int i = 0; i < size; ++i) {
 				new_stack.push(i); // pushing elements of stack
 			}
