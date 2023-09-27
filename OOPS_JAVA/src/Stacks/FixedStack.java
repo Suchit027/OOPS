@@ -2,7 +2,7 @@ package Stacks;
 
 import java.util.Scanner;
 
-class FixedStack implements IntStack{
+class FixedStack implements IntStack {
 	private int stk[]; // int stack
 	private int pos; // position of stack
 
@@ -14,19 +14,28 @@ class FixedStack implements IntStack{
 
 //pushing stack values
 	public void push(int data) {
-		if (pos == (stk.length - 1)) {
-			System.out.println("error: stack full");
+		try {
+			if (pos == stk.length - 1) {
+				throw new PushException();
+			}
+			stk[++pos] = data;
+		} catch (PushException exe) {
+			System.out.println(exe);
 		}
-		stk[++pos] = data;
+
 	}
 
 // Popping stack values
 	public int pop() {
-		if (pos >= 0) {
+		try {
+			if(pos == -1) {
+				throw new PopException();
+			}
 			return stk[pos--];
-		} else {
-			System.out.println("error: stack empty");
-			return 0;
+		}
+		catch(PopException exe){
+			System.out.println(exe);
+			return -1;
 		}
 	}
 
@@ -37,9 +46,11 @@ class FixedStack implements IntStack{
 			for (int i = 0; i < size; ++i) {
 				new_stack.push(i); // pushing elements of stack
 			}
+			new_stack.push(size);
 			for (int i = 0; i < size; ++i) {
 				System.out.println(new_stack.pop()); // printing elements
 			}
+			new_stack.pop();
 		}
 
 	}

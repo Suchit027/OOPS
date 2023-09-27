@@ -2,7 +2,8 @@ package call_methods;
 
 class test1 {
 	int a, b;
-
+//	to create final and static use this type of declaration
+	static final double c = 0;
 	public test1(int i, int j) { // constructor
 		a = i;
 		b = j;
