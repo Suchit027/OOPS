@@ -8,4 +8,5 @@ public class AnotherClient implements Callback {
 	public interface NestedInterface {
 		void show();
 	}
+	
 }
