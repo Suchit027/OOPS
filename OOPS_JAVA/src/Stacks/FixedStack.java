@@ -20,7 +20,7 @@ class FixedStack implements IntStack {
 			}
 			stk[++pos] = data;
 		} catch (PushException exe) {
-			System.out.println(exe);
+			System.out.println(exe.toString());
 		}
 
 	}
@@ -34,7 +34,7 @@ class FixedStack implements IntStack {
 			return stk[pos--];
 		}
 		catch(PopException exe){
-			System.out.println(exe);
+			System.out.println(exe.toString());
 			return -1;
 		}
 	}
